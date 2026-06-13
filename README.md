@@ -1,3 +1,4 @@
+<img width="1774" height="887" alt="image" src="https://github.com/user-attachments/assets/310a0ee9-cbf5-4d23-9fc5-dc5e5b7c7ac2" />
 # Transcendence
 
 > *From Latin: **trans** (beyond) + **scandare** (to climb)*
