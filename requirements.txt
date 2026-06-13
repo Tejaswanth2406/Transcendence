@@ -1,0 +1,12 @@
+# Transcendence — Python dependencies
+# The core package uses only the Python standard library.
+# Optional extras for extended research workflows:
+
+# Testing
+pytest>=7.4.0
+
+# Type checking
+mypy>=1.5.0
+
+# Linting
+ruff>=0.1.0
