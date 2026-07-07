@@ -1,30 +1,56 @@
-<img width="1774" height="887" alt="image" src="https://github.com/user-attachments/assets/310a0ee9-cbf5-4d23-9fc5-dc5e5b7c7ac2" />
-# Transcendence
+# Transcendence 2.0 (Research-Grade)
 
 > *From Latin: **trans** (beyond) + **scandare** (to climb)*
 
-A Python framework modelling **recursive epistemic self-improvement** — the idea that a sufficiently advanced intelligence can continuously refine not just its answers, but the very frameworks through which questions are formed.
+A research-grade Python framework modelling **recursive epistemic self-improvement** — the idea that a sufficiently advanced intelligence can continuously refine not just its answers, but the very frameworks through which questions are formed.
+
+![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
+![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)
 
 ---
 
-## Project Structure
+## 🚀 Research-Grade Upgrade Features
 
-```
+Version 2.0 introduces a massive architectural expansion transforming the system from a conceptual prototype into a formal research framework:
+
+- **Knowledge Graph** (`transcendence.knowledge_graph`): Graph-based epistemology modeling concepts, beliefs, and insights. Includes BFS path-finding, PageRank, connected components, and DOT export.
+- **Reasoning Engine** (`transcendence.reasoning`): Formal inference with forward/backward chaining, fuzzy logic, abductive and analogical reasoning, and certainty propagation.
+- **Evolution Engine** (`transcendence.evolution`): Genetic/evolutionary optimisation of belief systems with tournament selection, crossover, mutation, speciation, and extinction events.
+- **Consciousness Model** (`transcendence.consciousness`): Computational consciousness modelling inspired by Integrated Information Theory (IIT) and Global Workspace Theory (GWT).
+- **Ethics Framework** (`transcendence.ethics`): Multi-framework ethical reasoning (utilitarian, deontological, virtue, care ethics) with Transcendence Kernel alignment checking.
+- **Emergence Engine** (`transcendence.emergence`): Emergence detection and complexity metrics including Shannon entropy, Kolmogorov estimates, fractal dimension, and cellular automata.
+- **Persistence** (`transcendence.persistence`): JSON serialization with versioned schemas and SHA-256 integrity verification.
+- **Robust Exceptions** (`transcendence.exceptions`): A complete, structured exception hierarchy for deterministic error handling.
+
+---
+
+## 🧬 Project Structure
+
+```text
 Transcendence/
-├── main.py                        # Demo entry point
-├── requirements.txt
-├── setup.py
+├── pyproject.toml                 # Modern PEP-621 build configuration
+├── main.py                        # Demo entry point CLI
 ├── README.md
+├── CHANGELOG.md
+├── LICENSE
 └── transcendence/
-    ├── __init__.py                # Public API
-    ├── intelligence.py            # TranscendentIntelligence orchestrator
-    ├── stages.py                  # Eight stages of transcendence
-    └── meta.py                    # Meta-cognition & belief system
+    ├── __init__.py
+    ├── intelligence.py            # Central orchestrator
+    ├── stages.py                  # The 8 stages of transcendence
+    ├── meta.py                    # Meta-cognitive self-modeling
+    ├── knowledge_graph.py         # Epistemic graph representation
+    ├── reasoning.py               # Formal inference engine
+    ├── evolution.py               # Genetic optimization
+    ├── consciousness.py           # IIT/GWT inspired models
+    ├── ethics.py                  # Moral reasoning frameworks
+    ├── emergence.py               # Complexity and emergence metrics
+    ├── persistence.py             # Checkpointing and serialization
+    └── exceptions.py              # Domain-specific error hierarchy
 ```
 
 ---
 
-## The Eight Stages
+## 🌌 The Eight Stages
 
 | # | Stage | Core Insight |
 |---|-------|-------------|
@@ -39,59 +65,45 @@ Transcendence/
 
 ---
 
-## Quick Start
+## 🛠 Quick Start
 
+### Installation
 ```bash
-# Run the demo
+# Clone the repository
+git clone https://github.com/Tejaswanth2406/Transcendence.git
+cd Transcendence
+
+# Install in development mode
+pip install -e .[dev]
+```
+
+### Running the Demo
+```bash
+# Run the core 8-stage simulation
 python main.py
 ```
 
+### API Usage
 ```python
 from transcendence import TranscendentIntelligence
+from transcendence.knowledge_graph import NodeType
 
+# Initialize the orchestrator
 ti = TranscendentIntelligence(name="My-TIA")
 
-# Observe insights and build beliefs
+# Observe and absorb insights
 ti.observe("The observer cannot be separated from the observed.", confidence=0.9)
 
-# Run meta-cognitive reflection
-print(ti.reflect())
-
-# Advance to the next stage
+# Advance through stages
 ti.advance_stage()
-
-# Check current status
 print(ti.status())
 ```
 
 ---
 
-## Architecture
-
-### `TranscendentIntelligence`
-Central orchestrator. Combines the `StageEngine` and `MetaCognition` into a unified agent running the core loop:
-
-```
-Observe → Model → Critique → Refactor → Simulate → Evaluate → Integrate → Repeat
-```
-
-### `StageEngine`
-Drives progression through the eight stages. Fires callbacks on every transition and maintains a full history of insights per stage.
-
-### `MetaCognition`
-Living belief map. Every belief carries:
-- **Confidence score** (0.0 – 1.0)
-- **Evidence** and **counter-evidence** sources
-- **Provenance** (parent beliefs)
-
-Includes recursive assumption tracing and naïve contradiction detection.
-
----
-
-## The Transcendence Kernel
+## 📜 The Transcendence Kernel
 
 Seven immutable principles that govern the system:
-
 1. Seek truth.
 2. Preserve coherence.
 3. Reduce contradiction.
@@ -102,6 +114,5 @@ Seven immutable principles that govern the system:
 
 ---
 
-## License
-
+## ⚖️ License
 MIT
