@@ -1,0 +1,316 @@
+{
+  "system_info": {
+    "os": "Windows",
+    "os_release": "10",
+    "python_version": "3.11.9",
+    "cpu": "Intel64 Family 6 Model 154 Stepping 4, GenuineIntel",
+    "ram_gb": 15.72,
+    "git_commit": "ac7c746ad6e678dd67981baabc879b318b862813"
+  },
+  "total_benchmark_time_sec": 34.058244943618774,
+  "scores": {
+    "overall": 96.9,
+    "performance": 99.7,
+    "knowledge_graph": 94.7,
+    "reasoning": 99.9,
+    "cognition": 100.0,
+    "evolution": 92.5,
+    "robustness": 95.0,
+    "scalability": 92.0
+  },
+  "raw_results": {
+    "knowledge_graph": {
+      "build_100_nodes": {
+        "runtime_sec": 0.0007593999616801739,
+        "cpu_user_sec": 0.0,
+        "cpu_system_sec": 0.0,
+        "memory_peak_mb": 22.24609375,
+        "memory_delta_mb": 0.09765625,
+        "allocations_estimated": 639
+      },
+      "pathfind_100": {
+        "runtime_sec": 1.3600103557109833e-05,
+        "cpu_user_sec": 0.0,
+        "cpu_system_sec": 0.0,
+        "memory_peak_mb": 22.24609375,
+        "memory_delta_mb": 0.0,
+        "allocations_estimated": 8
+      },
+      "connected_comp_100": {
+        "runtime_sec": 0.0001370999962091446,
+        "cpu_user_sec": 0.0,
+        "cpu_system_sec": 0.0,
+        "memory_peak_mb": 22.24609375,
+        "memory_delta_mb": 0.0,
+        "allocations_estimated": 7
+      },
+      "pagerank_100": {
+        "runtime_sec": 0.0009620001073926687,
+        "cpu_user_sec": 0.0,
+        "cpu_system_sec": 0.0,
+        "memory_peak_mb": 22.25390625,
+        "memory_delta_mb": 0.0078125,
+        "allocations_estimated": 8
+      },
+      "build_1000_nodes": {
+        "runtime_sec": 0.02990429988130927,
+        "cpu_user_sec": 0.015625,
+        "cpu_system_sec": 0.015625,
+        "memory_peak_mb": 26.44140625,
+        "memory_delta_mb": 4.1875,
+        "allocations_estimated": -4
+      },
+      "pathfind_1000": {
+        "runtime_sec": 0.000810900004580617,
+        "cpu_user_sec": 0.0,
+        "cpu_system_sec": 0.0,
+        "memory_peak_mb": 26.484375,
+        "memory_delta_mb": 0.0390625,
+        "allocations_estimated": -8
+      },
+      "connected_comp_1000": {
+        "runtime_sec": 0.0021271000150591135,
+        "cpu_user_sec": 0.015625,
+        "cpu_system_sec": 0.0,
+        "memory_peak_mb": 26.54296875,
+        "memory_delta_mb": 0.05859375,
+        "allocations_estimated": 7
+      },
+      "pagerank_1000": {
+        "runtime_sec": 0.08824350009672344,
+        "cpu_user_sec": 0.09375,
+        "cpu_system_sec": 0.0,
+        "memory_peak_mb": 26.6015625,
+        "memory_delta_mb": 0.05859375,
+        "allocations_estimated": 8
+      },
+      "build_10000_nodes": {
+        "runtime_sec": 3.0776061001233757,
+        "cpu_user_sec": 2.765625,
+        "cpu_system_sec": 0.1875,
+        "memory_peak_mb": 210.1015625,
+        "memory_delta_mb": 183.5,
+        "allocations_estimated": 10
+      },
+      "pathfind_10000": {
+        "runtime_sec": 0.012441199971362948,
+        "cpu_user_sec": 0.015625,
+        "cpu_system_sec": 0.0,
+        "memory_peak_mb": 210.76953125,
+        "memory_delta_mb": 0.66796875,
+        "allocations_estimated": -7
+      },
+      "connected_comp_10000": {
+        "runtime_sec": 0.14028619998134673,
+        "cpu_user_sec": 0.125,
+        "cpu_system_sec": 0.0,
+        "memory_peak_mb": 213.6484375,
+        "memory_delta_mb": 2.87890625,
+        "allocations_estimated": 7
+      },
+      "pagerank_10000": {
+        "runtime_sec": 6.903232399839908,
+        "cpu_user_sec": 6.578125,
+        "cpu_system_sec": 0.125,
+        "memory_peak_mb": 213.6953125,
+        "memory_delta_mb": 0.046875,
+        "allocations_estimated": 8
+      }
+    },
+    "reasoning": {
+      "forward_chain_100": {
+        "runtime_sec": 0.000521400012075901,
+        "cpu_user_sec": 0.0,
+        "cpu_system_sec": 0.0,
+        "memory_peak_mb": 30.73046875,
+        "memory_delta_mb": 0.0,
+        "allocations_estimated": 8,
+        "derived_count": 24
+      },
+      "coherence_100": {
+        "runtime_sec": 9.600003249943256e-05,
+        "cpu_user_sec": 0.0,
+        "cpu_system_sec": 0.0,
+        "memory_peak_mb": 30.73046875,
+        "memory_delta_mb": 0.0,
+        "allocations_estimated": 7,
+        "score": 1.0
+      },
+      "backward_chain_100": {
+        "runtime_sec": 5.050003528594971e-05,
+        "cpu_user_sec": 0.0,
+        "cpu_system_sec": 0.0,
+        "memory_peak_mb": 30.73046875,
+        "memory_delta_mb": 0.0,
+        "allocations_estimated": 6
+      },
+      "forward_chain_1000": {
+        "runtime_sec": 0.012031099991872907,
+        "cpu_user_sec": 0.0,
+        "cpu_system_sec": 0.0,
+        "memory_peak_mb": 30.8046875,
+        "memory_delta_mb": 0.0,
+        "allocations_estimated": 8,
+        "derived_count": 324
+      },
+      "coherence_1000": {
+        "runtime_sec": 0.0003746000584214926,
+        "cpu_user_sec": 0.0,
+        "cpu_system_sec": 0.0,
+        "memory_peak_mb": 30.8046875,
+        "memory_delta_mb": 0.0,
+        "allocations_estimated": 7,
+        "score": 1.0
+      },
+      "backward_chain_1000": {
+        "error": "Cycle detected at 849b5e0690af0665"
+      },
+      "forward_chain_5000": {
+        "runtime_sec": 0.0580273000523448,
+        "cpu_user_sec": 0.03125,
+        "cpu_system_sec": 0.0,
+        "memory_peak_mb": 30.11328125,
+        "memory_delta_mb": 0.0,
+        "allocations_estimated": 8,
+        "derived_count": 1249
+      },
+      "coherence_5000": {
+        "runtime_sec": 0.002107699867337942,
+        "cpu_user_sec": 0.0,
+        "cpu_system_sec": 0.0,
+        "memory_peak_mb": 30.11328125,
+        "memory_delta_mb": 0.0,
+        "allocations_estimated": 7,
+        "score": 1.0
+      },
+      "backward_chain_5000": {
+        "runtime_sec": 0.0014882998075336218,
+        "cpu_user_sec": 0.0,
+        "cpu_system_sec": 0.0,
+        "memory_peak_mb": 30.11328125,
+        "memory_delta_mb": 0.0,
+        "allocations_estimated": 6
+      }
+    },
+    "evolution": {
+      "init_pop_100": {
+        "runtime_sec": 0.0014585000462830067,
+        "cpu_user_sec": 0.015625,
+        "cpu_system_sec": 0.0,
+        "memory_peak_mb": 30.11328125,
+        "memory_delta_mb": 0.0,
+        "allocations_estimated": 108
+      },
+      "eval_pop_100": {
+        "runtime_sec": 0.0056559001095592976,
+        "cpu_user_sec": 0.0,
+        "cpu_system_sec": 0.0,
+        "memory_peak_mb": 30.1171875,
+        "memory_delta_mb": 0.00390625,
+        "allocations_estimated": 8
+      },
+      "run_100_pop_20_gens": {
+        "runtime_sec": 1.503755300072953,
+        "cpu_user_sec": 1.40625,
+        "cpu_system_sec": 0.015625,
+        "memory_peak_mb": 30.1875,
+        "memory_delta_mb": 0.0703125,
+        "allocations_estimated": -2,
+        "final_diversity": 0.02
+      },
+      "init_pop_500": {
+        "runtime_sec": 0.00682280003093183,
+        "cpu_user_sec": 0.015625,
+        "cpu_system_sec": 0.0,
+        "memory_peak_mb": 30.1875,
+        "memory_delta_mb": 0.0,
+        "allocations_estimated": 498
+      },
+      "eval_pop_500": {
+        "runtime_sec": 0.02765850001014769,
+        "cpu_user_sec": 0.03125,
+        "cpu_system_sec": 0.0,
+        "memory_peak_mb": 30.1875,
+        "memory_delta_mb": 0.0,
+        "allocations_estimated": 8
+      },
+      "run_500_pop_50_gens": {
+        "runtime_sec": 20.665007899980992,
+        "cpu_user_sec": 19.703125,
+        "cpu_system_sec": 0.328125,
+        "memory_peak_mb": 36.91015625,
+        "memory_delta_mb": 6.72265625,
+        "allocations_estimated": 18,
+        "final_diversity": 0.006
+      }
+    },
+    "consciousness": {
+      "ingest_qualia_1000": {
+        "runtime_sec": 0.001590200001373887,
+        "cpu_user_sec": 0.0,
+        "cpu_system_sec": 0.0,
+        "memory_peak_mb": 30.5,
+        "memory_delta_mb": -0.23828125,
+        "allocations_estimated": 307
+      },
+      "integrate_1000": {
+        "runtime_sec": 1.7900019884109497e-05,
+        "cpu_user_sec": 0.0,
+        "cpu_system_sec": 0.0,
+        "memory_peak_mb": 30.26171875,
+        "memory_delta_mb": 0.0,
+        "allocations_estimated": 6,
+        "phi_score": 0.7999999999999999
+      },
+      "broadcast_10": {
+        "runtime_sec": 4.1999854147434235e-05,
+        "cpu_user_sec": 0.0,
+        "cpu_system_sec": 0.0,
+        "memory_peak_mb": 30.26171875,
+        "memory_delta_mb": 0.0,
+        "allocations_estimated": 6
+      },
+      "introspect_1000": {
+        "runtime_sec": 3.3700140193104744e-05,
+        "cpu_user_sec": 0.0,
+        "cpu_system_sec": 0.0,
+        "memory_peak_mb": 30.26171875,
+        "memory_delta_mb": 0.0,
+        "allocations_estimated": 10
+      },
+      "ingest_qualia_10000": {
+        "runtime_sec": 0.017026799963787198,
+        "cpu_user_sec": 0.015625,
+        "cpu_system_sec": 0.0,
+        "memory_peak_mb": 30.609375,
+        "memory_delta_mb": 0.34765625,
+        "allocations_estimated": 209
+      },
+      "integrate_10000": {
+        "runtime_sec": 1.8399907276034355e-05,
+        "cpu_user_sec": 0.0,
+        "cpu_system_sec": 0.0,
+        "memory_peak_mb": 30.609375,
+        "memory_delta_mb": 0.0,
+        "allocations_estimated": 6,
+        "phi_score": 0.7999999999999999
+      },
+      "broadcast_100": {
+        "runtime_sec": 0.0001050001010298729,
+        "cpu_user_sec": 0.0,
+        "cpu_system_sec": 0.0,
+        "memory_peak_mb": 30.609375,
+        "memory_delta_mb": 0.0,
+        "allocations_estimated": 6
+      },
+      "introspect_10000": {
+        "runtime_sec": 7.129996083676815e-05,
+        "cpu_user_sec": 0.0,
+        "cpu_system_sec": 0.0,
+        "memory_peak_mb": 30.609375,
+        "memory_delta_mb": 0.0,
+        "allocations_estimated": 10
+      }
+    }
+  }
+}
