@@ -153,11 +153,12 @@ def generate_report(fast: bool = False) -> None:
     # ── Markdown report ───────────────────────────────────────────────────────
     Path("reports").mkdir(exist_ok=True)
     adversarial_summary = adversarial_results.get("summary", {})
+    medal_str = "[TOP SCORE]" if overall >= 90 else "[GOOD]"
     md = f"""# Transcendence Research Evaluation Report
 
 > Generated: {time.strftime("%Y-%m-%d %H:%M:%S UTC", time.gmtime())}
 
-## 🏆 Overall Research Score: **{overall:.1f} / 100**
+## Overall Research Score: **{overall:.1f} / 100** {medal_str}
 
 | Category | Score | Weight |
 |---|---|---|
@@ -193,7 +194,7 @@ def generate_report(fast: bool = False) -> None:
             md += f"| {k} | {v['mean']:.4f} | {v.get('p95', 'N/A'):.4f} |\n"
 
     md += f"\n*Total benchmark time: {total_time:.2f}s*\n"
-    Path("reports/Evaluation_Report.md").write_text(md)
+    Path("reports/Evaluation_Report.md").write_text(md, encoding="utf-8")
     print(f"\n  [Report] reports/Evaluation_Report.md")
     print(f"  [JSON]   benchmark_results/eval_results.json")
 
