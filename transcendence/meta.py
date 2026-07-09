@@ -10,6 +10,14 @@ from dataclasses import dataclass, field
 from typing import Any, Dict, List, Optional
 import hashlib
 import time
+import re
+
+try:
+    from sklearn.feature_extraction.text import TfidfVectorizer
+    from sklearn.metrics.pairwise import cosine_similarity
+    HAS_SKLEARN = True
+except ImportError:
+    HAS_SKLEARN = False
 
 
 @dataclass
@@ -118,17 +126,64 @@ class MetaCognition:
     # ------------------------------------------------------------------
 
     def _check_contradictions(self, new_belief: Belief) -> None:
-        """Naïve contradiction detection: flag pairs with very low combined confidence."""
+        """
+        Hybrid contradiction detection pipeline:
+        Stage 1 & 2: Candidate generation via TF-IDF cosine similarity.
+        Stage 3: Lexical contradiction check (e.g., explicit negations) on high-similarity pairs.
+        """
+        if len(self._beliefs) < 2 or not HAS_SKLEARN:
+            # Fallback naive check if sklearn is missing or too few beliefs
+            self._naive_contradiction_check(new_belief)
+            return
+
+        # Prepare corpus
+        claims = [b.claim for b in self._beliefs.values() if b.id != new_belief.id]
+        ids = [b.id for b in self._beliefs.values() if b.id != new_belief.id]
+        
+        claims.append(new_belief.claim)
+        
+        # Stage 1 & 2: TF-IDF Similarity
+        vectorizer = TfidfVectorizer(stop_words='english')
+        try:
+            tfidf_matrix = vectorizer.fit_transform(claims)
+        except ValueError:
+            # Vocabulary empty (e.g., only stop words)
+            return
+
+        cosine_sim = cosine_similarity(tfidf_matrix[-1], tfidf_matrix[:-1]).flatten()
+
+        # Stage 3: Natural Language / Lexical Negation Heuristic
+        negation_words = {"not", "never", "no", "false", "cannot", "none", "neither"}
+        
+        for idx, score in enumerate(cosine_sim):
+            if score > 0.4:  # Semantic similarity threshold
+                existing_claim = claims[idx]
+                existing_id = ids[idx]
+                
+                # Check for negation mismatches
+                new_words = set(re.findall(r'\b\w+\b', new_belief.claim.lower()))
+                ext_words = set(re.findall(r'\b\w+\b', existing_claim.lower()))
+                
+                new_has_neg = bool(new_words.intersection(negation_words))
+                ext_has_neg = bool(ext_words.intersection(negation_words))
+                
+                if new_has_neg != ext_has_neg:
+                    existing_b = self._beliefs[existing_id]
+                    msg = (
+                        f"Semantic Contradiction Detected (sim={score:.2f}): "
+                        f"'{existing_b.claim}' vs '{new_belief.claim}'"
+                    )
+                    self._contradiction_log.append(msg)
+
+    def _naive_contradiction_check(self, new_belief: Belief) -> None:
         for existing in self._beliefs.values():
             if existing.id == new_belief.id:
                 continue
             combined = existing.confidence + new_belief.confidence
-            # Heuristic: if two beliefs together score below 0.5 they may conflict
             if combined < 0.5:
                 msg = (
-                    f"Potential contradiction: "
-                    f"'{existing.claim}' (conf={existing.confidence:.2f}) "
-                    f"vs '{new_belief.claim}' (conf={new_belief.confidence:.2f})"
+                    f"Low-confidence conflict: "
+                    f"'{existing.claim}' vs '{new_belief.claim}'"
                 )
                 self._contradiction_log.append(msg)
 

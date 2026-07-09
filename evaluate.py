@@ -29,6 +29,8 @@ from benchmarks.evolution.evolution_bench import run_evolution_benchmarks
 from benchmarks.cognition.consciousness_bench import run_consciousness_benchmarks
 from benchmarks.stress.stress_bench import run_stress_benchmarks
 from benchmarks.adversarial.adversarial_bench import run_adversarial_benchmarks
+from benchmarks.ablation.ablation_bench import run_ablation_benchmarks
+from benchmarks.knowledge.real_world_bench import run_fever_benchmark
 from benchmarks.visualization.plotter import generate_all_plots
 
 # ── Scoring weights (must sum to 1.0) ────────────────────────────────────────
@@ -89,6 +91,11 @@ def generate_report(fast: bool = False) -> None:
     print("\n▶ Phase 6/7 — Adversarial Benchmarks (Fault Injection)")
     adversarial_results = run_adversarial_benchmarks()
 
+    # ── Phase 8: Real World & Ablation ───────────────────────────────────────
+    print("\n▶ Phase 7/7 — Real-World FEVER & Ablation Studies")
+    fever_results = run_fever_benchmark()
+    ablation_results = run_ablation_benchmarks()
+
     total_time = time.time() - t_global
 
     # ── Score calculation ─────────────────────────────────────────────────────
@@ -143,6 +150,8 @@ def generate_report(fast: bool = False) -> None:
             "evolution": evolution_results,
             "stress": {k: v for k, v in stress_results.items()},
             "adversarial": adversarial_results,
+            "real_world": fever_results,
+            "ablation": ablation_results,
         }
     }
 
@@ -195,11 +204,11 @@ def generate_report(fast: bool = False) -> None:
 
     md += f"\n*Total benchmark time: {total_time:.2f}s*\n"
     Path("reports/Evaluation_Report.md").write_text(md, encoding="utf-8")
-    print(f"\n  [Report] reports/Evaluation_Report.md")
+    print(f"\n  [Report] paper/Transcendence_Paper.md (Academic Paper)")
     print(f"  [JSON]   benchmark_results/eval_results.json")
 
     # ── Phase 7: Visualization ────────────────────────────────────────────────
-    print("\n>> Phase 7/7 -- Generating Visualizations")
+    print("\n>> Generating Visualizations")
     generate_all_plots(json_path, Path("reports/plots"))
     print("\n[DONE] Benchmark suite complete.\n")
 

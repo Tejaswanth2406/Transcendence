@@ -85,11 +85,11 @@ class TranscendentIntelligence:
         """
         Attempt to transcend to the next stage.
 
-        Returns the new stage, or None if Omega has been reached.
+        Returns the new stage, or None if Fixed-Point Limit State has been reached.
         """
         new_stage = self._engine.advance()
         if new_stage is None:
-            self._log.append("[OMEGA] No further stages — the journey continues inward.")
+            self._log.append("[LIMIT_STATE] No further stages — the journey continues inward.")
         return new_stage
 
     def status(self) -> str:

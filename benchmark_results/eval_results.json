@@ -6,159 +6,159 @@
     "python_version": "3.11.9",
     "cpu": "Intel64 Family 6 Model 154 Stepping 4, GenuineIntel",
     "ram_gb": 15.72,
-    "git_commit": "1bb3d1a9d5d53cfa93fefd65a8e66d6cb1341bdc"
+    "git_commit": "d054e1ef75a74dd966482328c88a2b9e325e3a3a"
   },
-  "total_benchmark_time_sec": 31.518,
+  "total_benchmark_time_sec": 17.074,
   "scores": {
     "performance": 100.0,
     "knowledge_graph": 95.0,
     "reasoning": 100.0,
     "cognition": 100.0,
-    "evolution": 57.9,
+    "evolution": 71.3,
     "robustness": 80.0,
     "scalability": 100.0,
-    "overall": 94.0
+    "overall": 95.4
   },
   "raw_results": {
     "knowledge_graph": {
       "build_100_nodes": {
-        "runtime_sec": 0.0009601002093404531,
+        "runtime_sec": 0.0009283002000302076,
         "cpu_user_sec": 0.0,
         "cpu_system_sec": 0.0,
-        "memory_peak_mb": 63.0,
+        "memory_peak_mb": 63.1953125,
         "memory_delta_mb": 0.1015625,
         "allocations_estimated": 639
       },
       "pathfind_100": {
-        "runtime_sec": 1.8700025975704193e-05,
+        "runtime_sec": 2.3399945348501205e-05,
         "cpu_user_sec": 0.0,
         "cpu_system_sec": 0.0,
-        "memory_peak_mb": 63.0,
+        "memory_peak_mb": 63.1953125,
         "memory_delta_mb": 0.0,
         "allocations_estimated": 8
       },
       "connected_comp_100": {
-        "runtime_sec": 6.780005060136318e-05,
+        "runtime_sec": 8.039991371333599e-05,
         "cpu_user_sec": 0.0,
         "cpu_system_sec": 0.0,
-        "memory_peak_mb": 63.0,
+        "memory_peak_mb": 63.1953125,
         "memory_delta_mb": 0.0,
         "allocations_estimated": 7
       },
       "pagerank_100": {
-        "runtime_sec": 0.0009836000390350819,
+        "runtime_sec": 0.0011489000171422958,
         "cpu_user_sec": 0.0,
         "cpu_system_sec": 0.0,
-        "memory_peak_mb": 63.00390625,
+        "memory_peak_mb": 63.19921875,
         "memory_delta_mb": 0.00390625,
         "allocations_estimated": 8
       },
       "build_1000_nodes": {
-        "runtime_sec": 0.039738599909469485,
+        "runtime_sec": 0.04284940008074045,
         "cpu_user_sec": 0.046875,
         "cpu_system_sec": 0.0,
-        "memory_peak_mb": 67.9140625,
-        "memory_delta_mb": 4.91015625,
+        "memory_peak_mb": 68.0546875,
+        "memory_delta_mb": 4.85546875,
         "allocations_estimated": -4
       },
       "pathfind_1000": {
-        "runtime_sec": 0.0006395999807864428,
+        "runtime_sec": 0.0007547999266535044,
         "cpu_user_sec": 0.0,
         "cpu_system_sec": 0.0,
-        "memory_peak_mb": 67.91796875,
+        "memory_peak_mb": 68.05859375,
         "memory_delta_mb": 0.00390625,
         "allocations_estimated": -8
       },
       "connected_comp_1000": {
-        "runtime_sec": 0.00222949986346066,
+        "runtime_sec": 0.002606400055810809,
         "cpu_user_sec": 0.0,
         "cpu_system_sec": 0.0,
-        "memory_peak_mb": 67.91796875,
+        "memory_peak_mb": 68.05859375,
         "memory_delta_mb": 0.0,
         "allocations_estimated": 7
       },
       "pagerank_1000": {
-        "runtime_sec": 0.04647149983793497,
-        "cpu_user_sec": 0.046875,
+        "runtime_sec": 0.05124079994857311,
+        "cpu_user_sec": 0.0625,
         "cpu_system_sec": 0.0,
-        "memory_peak_mb": 67.96875,
-        "memory_delta_mb": 0.05078125,
+        "memory_peak_mb": 68.11328125,
+        "memory_delta_mb": 0.0546875,
         "allocations_estimated": 8
       },
       "build_10000_nodes": {
-        "runtime_sec": 2.975215299986303,
-        "cpu_user_sec": 2.6875,
-        "cpu_system_sec": 0.171875,
-        "memory_peak_mb": 250.82421875,
-        "memory_delta_mb": 182.85546875,
+        "runtime_sec": 3.0945471001323313,
+        "cpu_user_sec": 2.734375,
+        "cpu_system_sec": 0.21875,
+        "memory_peak_mb": 250.953125,
+        "memory_delta_mb": 182.83984375,
         "allocations_estimated": 41
       },
       "pathfind_10000": {
-        "runtime_sec": 0.018474299926310778,
+        "runtime_sec": 0.014026599936187267,
         "cpu_user_sec": 0.015625,
         "cpu_system_sec": 0.0,
-        "memory_peak_mb": 251.33203125,
-        "memory_delta_mb": 0.5078125,
+        "memory_peak_mb": 251.625,
+        "memory_delta_mb": 0.671875,
         "allocations_estimated": -7
       },
       "connected_comp_10000": {
-        "runtime_sec": 0.15174250002019107,
-        "cpu_user_sec": 0.140625,
-        "cpu_system_sec": 0.0,
-        "memory_peak_mb": 255.2265625,
-        "memory_delta_mb": 3.89453125,
+        "runtime_sec": 0.1332056000828743,
+        "cpu_user_sec": 0.109375,
+        "cpu_system_sec": 0.03125,
+        "memory_peak_mb": 255.3046875,
+        "memory_delta_mb": 3.6796875,
         "allocations_estimated": 7
       },
       "pagerank_10000": {
-        "runtime_sec": 4.635271099861711,
-        "cpu_user_sec": 4.421875,
-        "cpu_system_sec": 0.046875,
-        "memory_peak_mb": 255.32421875,
-        "memory_delta_mb": 0.09765625,
+        "runtime_sec": 4.098332399968058,
+        "cpu_user_sec": 3.703125,
+        "cpu_system_sec": 0.28125,
+        "memory_peak_mb": 255.3828125,
+        "memory_delta_mb": 0.078125,
         "allocations_estimated": 8
       }
     },
     "reasoning": {
       "forward_chain_100": {
-        "runtime_sec": 0.0005737999454140663,
+        "runtime_sec": 0.0002840999513864517,
         "cpu_user_sec": 0.0,
         "cpu_system_sec": 0.0,
-        "memory_peak_mb": 71.5859375,
+        "memory_peak_mb": 71.91796875,
         "memory_delta_mb": 0.0,
         "allocations_estimated": 8,
         "derived_count": 24
       },
       "coherence_100": {
-        "runtime_sec": 9.220000356435776e-05,
+        "runtime_sec": 5.6399963796138763e-05,
         "cpu_user_sec": 0.0,
         "cpu_system_sec": 0.0,
-        "memory_peak_mb": 71.5859375,
+        "memory_peak_mb": 71.91796875,
         "memory_delta_mb": 0.0,
         "allocations_estimated": 7,
         "score": 1.0
       },
       "backward_chain_100": {
-        "runtime_sec": 5.320017226040363e-05,
+        "runtime_sec": 3.0800001695752144e-05,
         "cpu_user_sec": 0.0,
         "cpu_system_sec": 0.0,
-        "memory_peak_mb": 71.5859375,
+        "memory_peak_mb": 71.91796875,
         "memory_delta_mb": 0.0,
         "allocations_estimated": 6
       },
       "forward_chain_1000": {
-        "runtime_sec": 0.0100660000462085,
+        "runtime_sec": 0.005082499934360385,
         "cpu_user_sec": 0.0,
         "cpu_system_sec": 0.0,
-        "memory_peak_mb": 71.6328125,
+        "memory_peak_mb": 71.9765625,
         "memory_delta_mb": 0.0,
         "allocations_estimated": 8,
         "derived_count": 324
       },
       "coherence_1000": {
-        "runtime_sec": 0.0005846000276505947,
+        "runtime_sec": 0.0007921000942587852,
         "cpu_user_sec": 0.0,
         "cpu_system_sec": 0.0,
-        "memory_peak_mb": 71.6328125,
+        "memory_peak_mb": 71.9765625,
         "memory_delta_mb": 0.0,
         "allocations_estimated": 7,
         "score": 1.0
@@ -167,148 +167,148 @@
         "error": "Cycle detected at 849b5e0690af0665"
       },
       "forward_chain_5000": {
-        "runtime_sec": 0.05390369985252619,
-        "cpu_user_sec": 0.0625,
+        "runtime_sec": 0.028047200059518218,
+        "cpu_user_sec": 0.03125,
         "cpu_system_sec": 0.0,
-        "memory_peak_mb": 70.859375,
-        "memory_delta_mb": 0.015625,
+        "memory_peak_mb": 71.4296875,
+        "memory_delta_mb": 0.0,
         "allocations_estimated": 8,
         "derived_count": 1249
       },
       "coherence_5000": {
-        "runtime_sec": 0.003429100150242448,
-        "cpu_user_sec": 0.0,
+        "runtime_sec": 0.0016973998863250017,
+        "cpu_user_sec": 0.015625,
         "cpu_system_sec": 0.0,
-        "memory_peak_mb": 70.859375,
+        "memory_peak_mb": 71.4296875,
         "memory_delta_mb": 0.0,
         "allocations_estimated": 7,
         "score": 1.0
       },
       "backward_chain_5000": {
-        "runtime_sec": 0.0013066998217254877,
+        "runtime_sec": 0.0006332998163998127,
         "cpu_user_sec": 0.0,
         "cpu_system_sec": 0.0,
-        "memory_peak_mb": 70.875,
+        "memory_peak_mb": 71.4296875,
         "memory_delta_mb": 0.0,
         "allocations_estimated": 6
       }
     },
     "consciousness": {
       "ingest_qualia_1000": {
-        "runtime_sec": 0.0017023999243974686,
+        "runtime_sec": 0.0015531000681221485,
         "cpu_user_sec": 0.0,
         "cpu_system_sec": 0.0,
-        "memory_peak_mb": 70.87890625,
-        "memory_delta_mb": 0.00390625,
+        "memory_peak_mb": 71.4296875,
+        "memory_delta_mb": 0.0,
         "allocations_estimated": 307
       },
       "integrate_1000": {
-        "runtime_sec": 2.219993621110916e-05,
+        "runtime_sec": 1.4099990949034691e-05,
         "cpu_user_sec": 0.0,
         "cpu_system_sec": 0.0,
-        "memory_peak_mb": 70.87890625,
+        "memory_peak_mb": 71.4296875,
         "memory_delta_mb": 0.0,
         "allocations_estimated": 6,
         "phi_score": 0.7999999999999999
       },
       "broadcast_10": {
-        "runtime_sec": 6.729993037879467e-05,
+        "runtime_sec": 2.8300099074840546e-05,
         "cpu_user_sec": 0.0,
         "cpu_system_sec": 0.0,
-        "memory_peak_mb": 70.87890625,
+        "memory_peak_mb": 71.4296875,
         "memory_delta_mb": 0.0,
         "allocations_estimated": 6
       },
       "introspect_1000": {
-        "runtime_sec": 6.500002928078175e-05,
+        "runtime_sec": 2.6399968191981316e-05,
         "cpu_user_sec": 0.0,
         "cpu_system_sec": 0.0,
-        "memory_peak_mb": 70.87890625,
+        "memory_peak_mb": 71.4296875,
         "memory_delta_mb": 0.0,
         "allocations_estimated": 10
       },
       "ingest_qualia_10000": {
-        "runtime_sec": 0.017811500001698732,
+        "runtime_sec": 0.009028099942952394,
         "cpu_user_sec": 0.015625,
         "cpu_system_sec": 0.0,
-        "memory_peak_mb": 70.88671875,
-        "memory_delta_mb": 0.0078125,
+        "memory_peak_mb": 71.4296875,
+        "memory_delta_mb": 0.0,
         "allocations_estimated": 209
       },
       "integrate_10000": {
-        "runtime_sec": 1.9799917936325073e-05,
+        "runtime_sec": 1.1999858543276787e-05,
         "cpu_user_sec": 0.0,
         "cpu_system_sec": 0.0,
-        "memory_peak_mb": 70.88671875,
+        "memory_peak_mb": 71.4296875,
         "memory_delta_mb": 0.0,
         "allocations_estimated": 6,
         "phi_score": 0.7999999999999999
       },
       "broadcast_100": {
-        "runtime_sec": 0.00011110003106296062,
+        "runtime_sec": 4.460010677576065e-05,
         "cpu_user_sec": 0.0,
         "cpu_system_sec": 0.0,
-        "memory_peak_mb": 70.88671875,
+        "memory_peak_mb": 71.4296875,
         "memory_delta_mb": 0.0,
         "allocations_estimated": 6
       },
       "introspect_10000": {
-        "runtime_sec": 3.809994086623192e-05,
+        "runtime_sec": 2.059992402791977e-05,
         "cpu_user_sec": 0.0,
         "cpu_system_sec": 0.0,
-        "memory_peak_mb": 70.88671875,
+        "memory_peak_mb": 71.4296875,
         "memory_delta_mb": 0.0,
         "allocations_estimated": 10
       }
     },
     "evolution": {
       "init_pop_100": {
-        "runtime_sec": 0.0016106001567095518,
-        "cpu_user_sec": 0.0,
+        "runtime_sec": 0.0006579000037163496,
+        "cpu_user_sec": 0.015625,
         "cpu_system_sec": 0.0,
-        "memory_peak_mb": 70.88671875,
+        "memory_peak_mb": 71.4296875,
         "memory_delta_mb": 0.0,
         "allocations_estimated": 108
       },
       "eval_pop_100": {
-        "runtime_sec": 0.006156299961730838,
-        "cpu_user_sec": 0.0,
+        "runtime_sec": 0.0029178999830037355,
+        "cpu_user_sec": 0.015625,
         "cpu_system_sec": 0.0,
-        "memory_peak_mb": 70.88671875,
+        "memory_peak_mb": 71.4296875,
         "memory_delta_mb": 0.0,
         "allocations_estimated": 8
       },
       "run_100_pop_20_gens": {
-        "runtime_sec": 1.5410678999032825,
-        "cpu_user_sec": 1.421875,
-        "cpu_system_sec": 0.015625,
-        "memory_peak_mb": 70.94140625,
-        "memory_delta_mb": 0.0546875,
+        "runtime_sec": 0.5428872001357377,
+        "cpu_user_sec": 0.484375,
+        "cpu_system_sec": 0.03125,
+        "memory_peak_mb": 71.48046875,
+        "memory_delta_mb": 0.05078125,
         "allocations_estimated": -2,
         "final_diversity": 0.02
       },
       "init_pop_500": {
-        "runtime_sec": 0.007531600072979927,
+        "runtime_sec": 0.003362900111824274,
         "cpu_user_sec": 0.0,
         "cpu_system_sec": 0.0,
-        "memory_peak_mb": 70.94140625,
+        "memory_peak_mb": 71.48046875,
         "memory_delta_mb": 0.0,
         "allocations_estimated": 498
       },
       "eval_pop_500": {
-        "runtime_sec": 0.023465099977329373,
-        "cpu_user_sec": 0.015625,
-        "cpu_system_sec": 0.0,
-        "memory_peak_mb": 70.94140625,
+        "runtime_sec": 0.010759999975562096,
+        "cpu_user_sec": 0.0,
+        "cpu_system_sec": 0.015625,
+        "memory_peak_mb": 71.48046875,
         "memory_delta_mb": 0.0,
         "allocations_estimated": 8
       },
       "run_500_pop_50_gens": {
-        "runtime_sec": 19.663239099783823,
-        "cpu_user_sec": 18.71875,
-        "cpu_system_sec": 0.109375,
-        "memory_peak_mb": 77.70703125,
-        "memory_delta_mb": 6.765625,
+        "runtime_sec": 7.395623600110412,
+        "cpu_user_sec": 6.96875,
+        "cpu_system_sec": 0.203125,
+        "memory_peak_mb": 78.078125,
+        "memory_delta_mb": 6.59765625,
         "allocations_estimated": 18,
         "final_diversity": 0.006
       }
@@ -316,107 +316,107 @@
     "stress": {
       "kg_concurrent_2t": {
         "runs": 2,
-        "mean": 0.0025849000085145235,
-        "median": 0.0025849000085145235,
-        "min": 0.0021291999146342278,
-        "max": 0.0030406001023948193,
-        "variance": 4.153251511250207e-07,
-        "std_dev": 0.0006444572531402069,
-        "p95": 0.00299503009300679,
-        "p99": 0.0030314861005172134,
-        "ci_lower": 0.001691727824509144,
-        "ci_upper": 0.0034780721925199033
+        "mean": 0.0008987499168142676,
+        "median": 0.0008987499168142676,
+        "min": 0.0008046999573707581,
+        "max": 0.0009927998762577772,
+        "variance": 1.7690789742651593e-08,
+        "std_dev": 0.0001330067281856508,
+        "p95": 0.0009833948803134262,
+        "p99": 0.000990918877068907,
+        "ci_lower": 0.0007144119963049889,
+        "ci_upper": 0.0010830878373235464
       },
       "kg_concurrent_4t": {
         "runs": 4,
-        "mean": 0.0021797249792143703,
-        "median": 0.0021636500023305416,
-        "min": 0.002095900010317564,
-        "max": 0.0022956999018788338,
-        "variance": 7.027355252161762e-09,
-        "std_dev": 8.382932215019851e-05,
-        "p95": 0.0022768899332731964,
-        "p99": 0.0022919379081577066,
-        "ci_lower": 0.0020975722435071756,
-        "ci_upper": 0.002261877714921565
+        "mean": 0.0009344498976133764,
+        "median": 0.0007362999022006989,
+        "min": 0.0006677999626845121,
+        "max": 0.0015973998233675957,
+        "variance": 1.9762137660931745e-07,
+        "std_dev": 0.00044454625924566886,
+        "p95": 0.0014747148496098814,
+        "p99": 0.0015728628286160527,
+        "ci_lower": 0.0004987945635526209,
+        "ci_upper": 0.0013701052316741319
       },
       "kg_concurrent_8t": {
         "runs": 8,
-        "mean": 0.0023227375058922917,
-        "median": 0.0021445000311359763,
-        "min": 0.002075500087812543,
-        "max": 0.003428300144150853,
-        "variance": 2.0747289889894262e-07,
-        "std_dev": 0.00045549193066281936,
-        "p95": 0.00305002003442496,
-        "p99": 0.0033526441222056745,
-        "ci_lower": 0.0020070977016038083,
-        "ci_upper": 0.002638377310180775
+        "mean": 0.0006992500566411763,
+        "median": 0.000680800061672926,
+        "min": 0.0006437001284211874,
+        "max": 0.000866499962285161,
+        "variance": 4.993710294427538e-09,
+        "std_dev": 7.066618918851885e-05,
+        "p95": 0.0008087149704806506,
+        "p99": 0.0008549429639242589,
+        "ci_lower": 0.0006502808858968794,
+        "ci_upper": 0.0007482192273854732
       },
       "kg_concurrent_16t": {
         "runs": 16,
-        "mean": 0.003567037478205748,
-        "median": 0.002641699858941138,
-        "min": 0.0021488999482244253,
-        "max": 0.008544699987396598,
-        "variance": 4.027165181740241e-06,
-        "std_dev": 0.002006779803999492,
-        "p95": 0.007254400115925819,
-        "p99": 0.008286640013102442,
-        "ci_lower": 0.0025837153742459965,
-        "ci_upper": 0.004550359582165499
+        "mean": 0.0008416062191827223,
+        "median": 0.0007014500442892313,
+        "min": 0.0006395999807864428,
+        "max": 0.0017643000464886427,
+        "variance": 8.838544447379139e-08,
+        "std_dev": 0.0002972968961724817,
+        "p95": 0.0013619999517686665,
+        "p99": 0.0016838400275446474,
+        "ci_lower": 0.0006959307400582062,
+        "ci_upper": 0.0009872816983072382
       },
       "reasoning_concurrent_2t": {
         "runs": 2,
-        "mean": 0.0010937000624835491,
-        "median": 0.0010937000624835491,
-        "min": 0.001046899938955903,
-        "max": 0.0011405001860111952,
-        "variance": 4.3805031244058615e-09,
-        "std_dev": 6.618536941353324e-05,
-        "p95": 0.0011358201736584306,
-        "p99": 0.0011395641835406421,
-        "ci_lower": 0.0010019718203693629,
-        "ci_upper": 0.0011854283045977354
+        "mean": 0.0003793999785557389,
+        "median": 0.0003793999785557389,
+        "min": 0.0003665999975055456,
+        "max": 0.00039219995960593224,
+        "variance": 3.2767902977061565e-10,
+        "std_dev": 1.810190679930199e-05,
+        "p95": 0.0003909199615009129,
+        "p99": 0.00039194395998492837,
+        "ci_lower": 0.00035431201569736004,
+        "ci_upper": 0.0004044879414141178
       },
       "reasoning_concurrent_4t": {
         "runs": 4,
-        "mean": 0.0014791250578127801,
-        "median": 0.0011613500537350774,
-        "min": 0.0010907999239861965,
-        "max": 0.0025030001997947693,
-        "variance": 4.689594309987783e-07,
-        "std_dev": 0.0006848061265780106,
-        "p95": 0.0023098301957361397,
-        "p99": 0.002464366198983043,
-        "ci_lower": 0.0008080150537663297,
-        "ci_upper": 0.0021502350618592308
+        "mean": 0.00035467499401420355,
+        "median": 0.0003479499137029052,
+        "min": 0.00033439998514950275,
+        "max": 0.0003884001635015011,
+        "variance": 5.547075540691312e-10,
+        "std_dev": 2.3552230341713525e-05,
+        "p95": 0.00038286513881757855,
+        "p99": 0.00038729315856471657,
+        "ci_lower": 0.0003315938082793243,
+        "ci_upper": 0.0003777561797490828
       },
       "reasoning_concurrent_8t": {
         "runs": 8,
-        "mean": 0.0011513375211507082,
-        "median": 0.0010722499573603272,
-        "min": 0.0010112000163644552,
-        "max": 0.0013822000473737717,
-        "variance": 2.4309539505547762e-08,
-        "std_dev": 0.00015591516765711976,
-        "p95": 0.0013747100718319416,
-        "p99": 0.0013807020522654055,
-        "ci_lower": 0.001043293822257325,
-        "ci_upper": 0.0012593812200440914
+        "mean": 0.00048110002535395324,
+        "median": 0.0004164502024650574,
+        "min": 0.0003380000125616789,
+        "max": 0.0007672000210732222,
+        "variance": 2.871561523090137e-08,
+        "std_dev": 0.00016945682409068503,
+        "p95": 0.0007299250224605202,
+        "p99": 0.0007597450213506817,
+        "ci_lower": 0.0003636724373097511,
+        "ci_upper": 0.0005985276133981554
       },
       "reasoning_concurrent_16t": {
         "runs": 16,
-        "mean": 0.001139343759859912,
-        "median": 0.0010957500198855996,
-        "min": 0.0010275000240653753,
-        "max": 0.0015678000636398792,
-        "variance": 2.0091070264204462e-08,
-        "std_dev": 0.000141742972539045,
-        "p95": 0.001374449988361448,
-        "p99": 0.0015291300485841927,
-        "ci_lower": 0.00106988970331578,
-        "ci_upper": 0.0012087978164040441
+        "mean": 0.0003626062534749508,
+        "median": 0.00033410009928047657,
+        "min": 0.00032029999420046806,
+        "max": 0.0006312001496553421,
+        "variance": 6.962829341154893e-09,
+        "std_dev": 8.344356980112304e-05,
+        "p95": 0.0005328750121407211,
+        "p99": 0.0006115351221524178,
+        "ci_lower": 0.0003217189042724005,
+        "ci_upper": 0.0004034936026775011
       }
     },
     "adversarial": {
@@ -425,40 +425,60 @@
         "attempts": 10,
         "caught": 8,
         "resilient": true,
-        "duration_ms": 0.05869986489415169
+        "duration_ms": 0.029999995604157448
       },
       "missing_node_edge": {
         "test": "missing_node_edge",
         "attempts": 3,
         "caught": 3,
         "resilient": true,
-        "duration_ms": 0.08070003241300583
+        "duration_ms": 0.032499898225069046
       },
       "self_loop": {
         "test": "self_loop",
         "caught_insertion": 0,
-        "pathfind_time_ms": 0.017200130969285965,
-        "duration_ms": 0.0475000124424696
+        "pathfind_time_ms": 0.007200054824352264,
+        "duration_ms": 0.01840014010667801
       },
       "contradiction_injection": {
         "test": "contradiction_injection",
         "derived_count": 0,
         "coherence_score": 1.0,
         "resilient": true,
-        "duration_ms": 0.05589984357357025
+        "duration_ms": 0.023800181224942207
       },
       "empty_inputs": {
         "test": "empty_inputs",
         "caught": 1,
         "empty_forward_chain": true,
         "resilient": true,
-        "duration_ms": 0.020099803805351257
+        "duration_ms": 0.007400056347250938
       },
       "summary": {
         "total_tests": 5,
         "resilient_count": 4,
         "robustness_score": 80.0
       }
+    },
+    "real_world": {
+      "dataset_size": 20,
+      "runtime_sec": 0.0006379999686032534,
+      "metrics": {
+        "accuracy": 0.9474,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1_score": 0.0,
+        "false_positive_rate": 0.0,
+        "false_negative_rate": 1.0
+      }
+    },
+    "ablation": {
+      "baseline_integration_time_sec": 0.004615699872374535,
+      "ablation_no_meta_time_sec": 0.0001829999964684248,
+      "meta_overhead_impact": "+443.3%",
+      "baseline_reasoning_derived": 0,
+      "ablation_no_reasoning_derived": 0,
+      "reasoning_performance_drop": "-100%"
     }
   }
 }
