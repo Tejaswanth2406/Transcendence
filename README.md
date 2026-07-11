@@ -1,4 +1,6 @@
-# Transcendence 2.0 (Research-Grade)
+<img width="1981" height="794" alt="image" src="https://github.com/user-attachments/assets/c557fc2a-a82a-4b40-8d2d-60b6096cd4ab" />
+
+# Transcendence 2.0 
 
 > *From Latin: **trans** (beyond) + **scandare** (to climb)*
 
@@ -8,8 +10,6 @@ A research-grade Python framework modelling **recursive epistemic self-improveme
 ![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)
 
 ---
-
-## 🚀 Research-Grade Upgrade Features
 
 Version 2.0 introduces a massive architectural expansion transforming the system from a conceptual prototype into a formal research framework:
 
